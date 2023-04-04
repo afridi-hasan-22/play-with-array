@@ -79,3 +79,17 @@ console.log(arr2)
 const names = ['AFRIDI', 'hasan', 'mahir'];
 names[0] = 'Samiha'
 console.log(names)
+
+// <----fill array and update ---->
+const response = new Array(9);
+// response.fill(false);
+for(let i = 0; i < response.length; i++){
+  const rand = Math.floor(Math.random() *10 + 1)
+  response[i] = rand > 5 ? 'x' : '0';
+}
+console.log(response)
+
+// <==== Array is Mutable ===>
+function update(arr) {
+  
+}
